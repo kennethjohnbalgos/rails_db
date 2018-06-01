@@ -2,26 +2,26 @@
   <hr/>
   <div class="row">
     <div class="large-6 columns">
-      <p>© Rails DB  <span class='red'><%= fa_icon 'heart' %></span>  <%= link_to 'https://github.com/igorkasyanchuk/rails_db', 'https://github.com/igorkasyanchuk/rails_db', target: '_blank' %></p>
+      <p>© Rails DB  <span class='red'><%= fa_icon 'heart' %></span></p>
     </div>
     <div class="large-6 columns">
       <ul class="inline-list right">
-        <% if defined?  main_app.root_url %>
+        <!-- <% if defined?  main_app.root_url %>
+          <li>
+            <%= link_to main_app.root_url do %>
+              <%= fa_icon 'home' %>
+              Home
+            <% end %>
+          </li>
+          <li>|</li>
+        <% end %> -->
         <li>
-          <%= link_to main_app.root_url do %>
+          <%= link_to rails_db.root_path do %>
             <%= fa_icon 'home' %>
             Home
           <% end %>
         </li>
-        <li>|</li>
-        <% end %>
-        <li>
-          <%= link_to rails_db.root_path do %>
-            <%= fa_icon 'list-ul' %>
-            Dashboard
-          <% end %>
-        </li>
-        <li>|</li>
+        <!-- <li>|</li>
         <li>
           <%= link_to rails_db.sql_path do %>
             <%= fa_icon 'database' %>
@@ -48,7 +48,7 @@
             <%= fa_icon 'heart' %>
             More Gems
           </a>
-        </li>
+        </li> -->
       </ul>
       <div class='clear'></div>
     </div>
